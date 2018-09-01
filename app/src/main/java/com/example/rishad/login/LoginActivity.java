@@ -22,14 +22,7 @@ public class LoginActivity extends AppCompatActivity {
             fragmentManager.beginTransaction().replace(R.id.FrameContainer, new login_fragment(), Utils.Login_Fragment).commit();
         }
 
-        //On Close icon click finish activity
-        findViewById(R.id.close_activity).setOnClickListener(
-                new View.OnClickListener() {
-                    @Override
-                    public void onClick(View arg0) {
-                        finish();
-                    }
-                });
+
     }
     //Replace Login_Fragment with animation
     protected void replaceLoginFragment() {
